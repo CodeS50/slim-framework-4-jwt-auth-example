@@ -20,6 +20,11 @@ class User implements JsonSerializable
     /**
      * @var string
      */
+    private $password;
+
+    /**
+     * @var string
+     */
     private $firstName;
 
     /**
@@ -28,15 +33,17 @@ class User implements JsonSerializable
     private $lastName;
 
     /**
-     * @param int|null  $id
-     * @param string    $username
-     * @param string    $firstName
-     * @param string    $lastName
+     * @param int|null $id
+     * @param string $username
+     * @param string $password
+     * @param string $firstName
+     * @param string $lastName
      */
-    public function __construct(?int $id, string $username, string $firstName, string $lastName)
+    public function __construct(?int $id, string $username, string $password, string $firstName, string $lastName)
     {
         $this->id = $id;
         $this->username = strtolower($username);
+        $this->password = strtolower($password);
         $this->firstName = ucfirst($firstName);
         $this->lastName = ucfirst($lastName);
     }
@@ -55,6 +62,14 @@ class User implements JsonSerializable
     public function getUsername(): string
     {
         return $this->username;
+    }
+
+    /**
+     * @return string
+     */
+    public function getPassword(): string
+    {
+        return $this->password;
     }
 
     /**

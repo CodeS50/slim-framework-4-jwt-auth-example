@@ -16,4 +16,11 @@ interface UserRepository
      * @throws UserNotFoundException
      */
     public function findUserOfId(int $id): User;
+
+    /**
+     * @param string $username
+     * @param string $password
+     * @return User|null
+     */
+    public function findUserOfUsernamePassword(string $username, string $password): ?User;
 }
