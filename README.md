@@ -1,17 +1,17 @@
-# Slim Framework 4 Skeleton Application
+# Slim Framework 4 JWT Auth Example
 
-[![Coverage Status](https://coveralls.io/repos/github/slimphp/Slim-Skeleton/badge.svg?branch=master)](https://coveralls.io/github/slimphp/Slim-Skeleton?branch=master)
+## Requires
+* php: >=7.2
+* codes50/validation
+* firebase/php-jwt
+* tuupola/slim-jwt-auth
 
-Use this skeleton application to quickly setup and start working on a new Slim Framework 4 application. This application uses the latest Slim 4 with Slim PSR-7 implementation and PHP-DI container implementation. It also uses the Monolog logger.
+## Install
 
-This skeleton application was built for Composer. This makes setting up a new Slim Framework application quick and easy.
-
-## Install the Application
-
-Run this command from the directory in which you want to install your new Slim Framework application.
+Install latest version using [composer](https://getcomposer.org/).
 
 ```bash
-composer create-project slim/slim-skeleton [my-app-name]
+$ composer create-project codes50/slim-framework-4-jwt-auth-example [my-app-name]
 ```
 
 Replace `[my-app-name]` with the desired directory name for your new application. You'll want to:
