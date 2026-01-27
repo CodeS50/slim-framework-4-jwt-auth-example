@@ -31,7 +31,7 @@
         "tuupola/slim-jwt-auth": "^3.4"
     },
     "require-dev": {
-        "phpunit/phpunit": "^7.5"
+        "phpunit/phpunit": "^8.5"
     },
     "config": {
         "process-timeout": 0,
